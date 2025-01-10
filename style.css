@@ -1,4 +1,17 @@
-.navbar{
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75)),url(3f1bd2f20b06047e0f029d44c909a2a58b45e7fc6ae1dd0f.avif);
+    background-size: cover;
+    background-position: center;
+  
+  }
+  .navbar{
     width: 85%;
     margin: auto;
     padding: 35px 0;
@@ -17,16 +30,141 @@
   }
   .navbar ul li a{
     text-decoration: none;
-    color: #000000;
+    color: #ff0000;
     text-transform: uppercase;
   }
   .navbar ul li::after{
     content: "";
     height: 3px;
     width: 0;
-    background: yellow;
+    background: rgb(255, 255, 255);
     position: absolute;
     left: 0;
     bottom: -5px;
     transition: 0.5s;
-    }
+  }
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:  center;
+    color: #ffffff;
+  }
+  .content h1{
+    font-size: 150px;
+    margin-top: 80px;
+  }
+  .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    background: transparent;
+    color: #fdfdfd;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  span{
+    background: rgb(0, 0, 0);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  button:hover span{
+    width: 100%;
+  
+  }
+  button:hover{
+    border:solid;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  .videos {
+    text-align: center;
+  }
+  h1,p{
+    color: white;
+  }
+  
+  .kontakty {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      flex-direction:column;
+      align-items: center; 
+      justify-content: center; 
+      text-align: center;
+  }
+  
+  #kontakty-škola {
+      background-color: #e2e1e1;
+      padding: 20px;
+      border: 1px solid+ #c9c9c9;
+      border-radius: 10px;
+      width: 80%; 
+      margin-bottom: 20px;
+  }
+  
+  #kontakty-škola table {
+      width: 100%;
+  }
+  
+  #kontakty-škola th, #kontakty-škola td {
+      border: 1px solid #d1cece;
+      padding: 5px;
+      text-align: left;
+  }
+  
+  #kontaktni-formular {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 60%; 
+  }
+  
+  #kontaktni-formular label {
+      display: block;
+      margin-bottom: 10px;
+  }
+  
+  #kontaktni-formular input, #kontaktni-formular textarea {
+      width: 40%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #dbdbdb;
+  }
+  
+  #kontaktni-formular input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  #kontaktni-formular input[type="submit"]:hover {
+      background-color: #3e8e41;
+  }
