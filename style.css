@@ -30,14 +30,14 @@
   }
   .navbar ul li a{
     text-decoration: none;
-    color: #ff0000;
+    color: #000000;
     text-transform: uppercase;
   }
   .navbar ul li::after{
     content: "";
     height: 3px;
     width: 0;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -62,6 +62,7 @@
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+    font-size: 50px;
   }
   button{
     width: 200px;
@@ -72,13 +73,13 @@
     font-weight: bold;
     border: 2px solid rgb(0, 0, 0);
     background: transparent;
-    color: #fdfdfd;
+    color: #000000;
     cursor: pointer;
     position: relative;
     overflow: hidden;
   }
   span{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 0, 0);
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -118,7 +119,7 @@
   }
   
   #kontakty-škola {
-      background-color: #e2e1e1;
+      background-color: #cecccc;
       padding: 20px;
       border: 1px solid+ #c9c9c9;
       border-radius: 10px;
@@ -139,7 +140,7 @@
   #kontaktni-formular {
       background-color: #f0f0f0;
       padding: 20px;
-      border: 1px solid #ccc;
+      border: 1px solid #bbbbbb;
       border-radius: 10px;
       width: 60%; 
   }
@@ -168,3 +169,64 @@
   #kontaktni-formular input[type="submit"]:hover {
       background-color: #3e8e41;
   }
+  marquee{
+    color: red;
+    text-decoration-thickness: 5;
+  }
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dva sloupce */
+    gap: 20px; /* Mezera mezi obrázky */
+    margin: 20px auto; /* Odstup od navbaru */
+    padding: 20px;
+    width: 50%; /* Zmenšení šířky kontejneru na polovinu */
+    max-width: 500px; /* Maximální šířka kontejneru */
+}
+
+.image-container img {
+    width: 100%; /* Obrázky se přizpůsobí kontejneru */
+    height: auto; /* Zachování proporcí */
+    border-radius: 10px; /* Zaoblené rohy */
+    object-fit: cover; /* Přizpůsobení obrázku */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+}
+
+
+
+header {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.map {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
