@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktová stránka - Mikina</title>
+    <link rel="stylesheet" href="produkty-style.css">
+</head>
+<body>
+    <div class="produkt-mikina-container">
+        <div class="produkt-mikina-images">
+            <img src="image1.jpg" alt="Mikina 1" class="produkt-mikina-main-image">
+            <div class="produkt-mikina-thumbnail-images">
+                <img src="image1.jpg" alt="Mikina 1" class="produkt-mikina-thumbnail" onclick="changeImage('image1.jpg')">
+                <img src="image2.jpg" alt="Mikina 2" class="produkt-mikina-thumbnail" onclick="changeImage('image2.jpg')">
+                <img src="image3.jpg" alt="Mikina 3" class="produkt-mikina-thumbnail" onclick="changeImage('image3.jpg')">
+            </div>
+        </div>
+        <div class="produkt-mikina-details">
+            <h1 class="produkt-mikina-title">Název mikiny</h1>
+            <p class="produkt-mikina-price">Cena: 999 Kč</p>
+            <p class="produkt-mikina-description">Toto je popis mikiny. Obsahuje všechny důležité informace o produktu.</p>
+            <div class="produkt-mikina-size-selection">
+                <label for="produkt-mikina-size">Velikost:</label>
+                <select id="produkt-mikina-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div class="produkt-mikina-quantity-selection">
+                <label for="produkt-mikina-quantity">Počet kusů:</label>
+                <input type="number" id="produkt-mikina-quantity" value="1" min="1">
+            </div>
+            <button class="produkt-mikina-buy-button">Koupit</button>
+            <div class="produkt-mikina-reviews">
+                <h2>Recenze</h2>
+                <p>★★★★★ - Skvělá mikina!</p>
+                <p>★★★★☆ - Dobrá kvalita, ale mohl by být levnější.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(image) {
+            document.querySelector('.produkt-mikina-main-image').src = image;
+        }
+    </script>
+</body>
+</html>

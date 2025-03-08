@@ -105,7 +105,7 @@
     text-align: center;
   }
   h1,p{
-    color: white;
+    color: rgb(255, 255, 255);
   }
   
   .kontakty {
@@ -119,9 +119,9 @@
   }
   
   #kontakty-škola {
-      background-color: #cecccc;
+      background-color: #d3d3d3;
       padding: 20px;
-      border: 1px solid+ #c9c9c9;
+      border: 1px solid+ #ffffff;
       border-radius: 10px;
       width: 80%; 
       margin-bottom: 20px;
@@ -132,13 +132,13 @@
   }
   
   #kontakty-škola th, #kontakty-škola td {
-      border: 1px solid #d1cece;
+      border: 1px solid #d2cfcf;
       padding: 5px;
       text-align: left;
   }
   
   #kontaktni-formular {
-      background-color: #f0f0f0;
+      background-color: #d3d3d3;
       padding: 20px;
       border: 1px solid #bbbbbb;
       border-radius: 10px;
@@ -175,20 +175,20 @@
   }
   .image-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dva sloupce */
-    gap: 20px; /* Mezera mezi obrázky */
-    margin: 20px auto; /* Odstup od navbaru */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    margin: 20px auto;
     padding: 20px;
-    width: 50%; /* Zmenšení šířky kontejneru na polovinu */
-    max-width: 500px; /* Maximální šířka kontejneru */
+    width: 50%; 
+    max-width: 500px; 
 }
 
 .image-container img {
-    width: 100%; /* Obrázky se přizpůsobí kontejneru */
-    height: auto; /* Zachování proporcí */
-    border-radius: 10px; /* Zaoblené rohy */
-    object-fit: cover; /* Přizpůsobení obrázku */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -230,3 +230,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+

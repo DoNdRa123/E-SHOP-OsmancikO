@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.produkt-mikina-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.produkt-mikina-images {
+    flex: 1;
+    padding: 20px;
+}
+
+.produkt-mikina-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produkt-mikina-thumbnail-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.produkt-mikina-thumbnail {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+.produkt-mikina-thumbnail:hover {
+    border: 1px solid #333;
+}
+
+.produkt-mikina-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.produkt-mikina-title {
+    font-size: 24px;
+}
+
+.produkt-mikina-price {
+    font-size: 24px;
+    color: #e74c3c
+}
